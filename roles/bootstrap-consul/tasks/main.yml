@@ -29,4 +29,15 @@
   run_once: true
   tags: installation
 
+- name: Install Consul
+  copy:
+    src: "/tmp/consul"
+    dest: "/usr/local/bin/consul"
+    owner: "consul"
+    group: "consul"
+    mode: 0755
+  tags: installation
+
+
+
 
