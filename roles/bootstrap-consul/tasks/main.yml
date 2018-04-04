@@ -23,5 +23,10 @@
   run_once: true
   tags: installation
 
+- name: Unarchive Consul package
+  local_action: unarchive src="/tmp/consul_1.0.6_linux_amd64.zip" dest="/tmp" creates="/tmp/consul"
+  become: no
+  run_once: true
+  tags: installation
 
 
